@@ -1,4 +1,8 @@
-const API_BASE_URL = (import.meta.env.VITE_API_URL || "http://localhost:5000").replace(
+const DEFAULT_API_URL = import.meta.env.DEV
+  ? "http://localhost:5000"
+  : "https://ayur-web.onrender.com";
+
+const API_BASE_URL = (import.meta.env.VITE_API_URL || DEFAULT_API_URL).replace(
   /\/+$/,
   ""
 );
