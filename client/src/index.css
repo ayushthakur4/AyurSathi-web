@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    min-height: 100%;
+  }
+}
+
+/* Soft floating animation for background Ayurvedic color blobs */
+@keyframes blobFloatSlow {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(24px, -20px, 0) scale(1.06);
+  }
+}
+
+@keyframes blobFloatReverse {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-24px, 18px, 0) scale(1.05);
+  }
+}
+
+.animate-blob-slow {
+  animation: blobFloatSlow 16s ease-in-out infinite;
+}
+
+.animate-blob-reverse {
+  animation: blobFloatReverse 20s ease-in-out infinite;
+}
+
+/* Skeleton shimmer effect (replaces spinners during loading) */
+@keyframes shimmerSlide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.skeleton-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-shimmer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.55) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmerSlide 1.6s ease-in-out infinite;
+}
+
+/* 3D Buddha levitation & sacred mandala animations */
+@keyframes buddhaLevitate {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes shadowBreathe {
+  0%,
+  100% {
+    transform: scaleX(1) scaleY(1);
+    opacity: 0.34;
+  }
+  50% {
+    transform: scaleX(0.88) scaleY(0.9);
+    opacity: 0.22;
+  }
+}
+
+@keyframes mandalaSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes mandalaSpinReverse {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pranaDrift {
+  0%,
+  100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateY(-12px) scale(1.25);
+    opacity: 0.9;
+  }
+}
+
+.animate-buddha-levitate {
+  animation: buddhaLevitate 5.5s ease-in-out infinite;
+}
+
+.animate-shadow-breathe {
+  animation: shadowBreathe 5.5s ease-in-out infinite;
+}
+
+.animate-mandala-spin {
+  animation: mandalaSpin 48s linear infinite;
+  transform-origin: 210px 145px;
+}
+
+.animate-mandala-spin-reverse {
+  animation: mandalaSpinReverse 34s linear infinite;
+  transform-origin: 210px 145px;
+}
+
+.animate-prana {
+  animation: pranaDrift 4s ease-in-out infinite;
+}
+
+/* 7-Chakras Loading Sanctuary animations */
+@keyframes chakraRipple {
+  0% {
+    transform: scale(0.75);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+@keyframes nadiWaveFlow {
+  from {
+    stroke-dashoffset: 64;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes pranaRise {
+  0% {
+    transform: translateY(188px) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px) scale(1.15);
+    opacity: 0;
+  }
+}
+
+.animate-chakra-ripple {
+  animation: chakraRipple 1.8s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+.animate-nadi-flow {
+  animation: nadiWaveFlow 2.4s linear infinite;
+}
+
+.animate-prana-rise {
+  animation: pranaRise 3.2s ease-in-out infinite;
+}

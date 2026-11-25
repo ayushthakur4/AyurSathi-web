@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="favBg" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#FFF7E6" />
+      <stop offset="55%" stop-color="#E4EFE4" />
+      <stop offset="100%" stop-color="#9BC4A0" />
+    </radialGradient>
+    <radialGradient id="favHalo" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#FFE9AE" stop-opacity="0.95" />
+      <stop offset="100%" stop-color="#F4B860" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="favSkin" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#FFF5E1" />
+      <stop offset="60%" stop-color="#F0CFA0" />
+      <stop offset="100%" stop-color="#C9965B" />
+    </radialGradient>
+    <linearGradient id="favRobe" x1="20%" y1="10%" x2="85%" y2="95%">
+      <stop offset="0%" stop-color="#F5BD60" />
+      <stop offset="50%" stop-color="#DE8A2B" />
+      <stop offset="100%" stop-color="#9C5314" />
+    </linearGradient>
+    <radialGradient id="favHair" cx="40%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4F6354" />
+      <stop offset="100%" stop-color="#19261D" />
+    </radialGradient>
+    <radialGradient id="favOrb" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#B9E3C1" />
+      <stop offset="100%" stop-color="#4F8A62" />
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded Glass Badge Background -->
+  <rect x="2" y="2" width="60" height="60" rx="18" fill="url(#favBg)" stroke="#FFFFFF" stroke-opacity="0.7" stroke-width="2" />
+  <circle cx="32" cy="29" r="22" fill="url(#favHalo)" />
+  <circle cx="32" cy="29" r="19" fill="none" stroke="#E39B38" stroke-opacity="0.5" stroke-width="1" stroke-dasharray="2.5 2.5" />
+
+  <!-- Lotus Base -->
+  <path d="M16 51 C20 47, 44 47, 48 51 C44 55, 20 55, 16 51 Z" fill="#DFECE0" stroke="#5A8F6B" stroke-opacity="0.5" stroke-width="0.8" />
+  <path d="M25 51 C28 56, 36 56, 39 51 Z" fill="#F9E5BF" />
+
+  <!-- Padmasana Legs -->
+  <path d="M17 47 C16 42, 23 39, 32 39 C41 39, 48 42, 47 47 C46 50, 39 51, 32 51 C25 51, 18 50, 17 47 Z" fill="url(#favRobe)" />
+
+  <!-- Torso & Saffron Robe -->
+  <path d="M25 27 C24 32, 24 37, 25 41 L39 41 C40 37, 40 32, 39 27 C37 25, 27 25, 25 27 Z" fill="url(#favSkin)" />
+  <path d="M25 27 C28 26, 32 30, 39 35 L39 41 L25 41 C24 37, 24 31, 25 27 Z" fill="url(#favRobe)" />
+
+  <!-- Arms & Healing Orb -->
+  <path d="M25 28 C21 31, 21 38, 25 42 C27 44, 30 44, 31 42 C28 40, 26 37, 26 33 Z" fill="url(#favRobe)" />
+  <path d="M39 28 C43 31, 43 38, 39 42 C37 44, 34 44, 33 42 C36 40, 38 37, 38 33 Z" fill="url(#favSkin)" />
+  <circle cx="32" cy="41.5" r="2.8" fill="url(#favOrb)" />
+
+  <!-- Head & Ushnisha -->
+  <circle cx="32" cy="18.5" r="7" fill="url(#favSkin)" />
+  <path d="M25.2 17.5 C25.2 11.5, 38.8 11.5, 38.8 17.5 C36.5 15.3, 27.5 15.3, 25.2 17.5 Z" fill="url(#favHair)" />
+  <ellipse cx="32" cy="11.2" rx="3.4" ry="2.6" fill="url(#favHair)" />
+  <circle cx="32" cy="8.5" r="1.1" fill="#FFE49C" />
+
+  <!-- Serene Closed Eyes & Smile -->
+  <path d="M28 19 Q29.5 20.2 31 19" fill="none" stroke="#5D3D1E" stroke-width="0.9" stroke-linecap="round" />
+  <path d="M33 19 Q34.5 20.2 36 19" fill="none" stroke="#5D3D1E" stroke-width="0.9" stroke-linecap="round" />
+  <path d="M30.4 22.5 Q32 23.6 33.6 22.5" fill="none" stroke="#8F572B" stroke-width="0.9" stroke-linecap="round" />
+</svg>
